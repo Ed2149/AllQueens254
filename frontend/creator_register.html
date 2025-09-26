@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - AllQueens254.com</title>
+    <style>
+        :root {
+            --black: #000000;
+            --red: #E70008;
+            --cream: #F9E4AD;
+            --orange: #FF9940;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--black) 0%, #222 100%);
+            color: var(--cream);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding-bottom: 2rem;
+        }
+        
+        header {
+            background: var(--black);
+            color: var(--cream);
+            text-align: center;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            border-bottom: 3px solid var(--red);
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--orange);
+            text-shadow: 1px 1px 2px var(--black);
+        }
+        
+        .tagline {
+            font-style: italic;
+            color: var(--cream);
+            font-size: 1rem;
+        }
+        
+        main {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(231, 0, 8, 0.3);
+            border: 1px solid var(--red);
+        }
+        
+        form {
+            display: grid;
+            grid-gap: 1.2rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--orange);
+        }
+        
+        input, select, textarea {
+            padding: 0.8rem;
+            border: 2px solid var(--red);
+            border-radius: 5px;
+            background: var(--black);
+            color: var(--cream);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--orange);
+            box-shadow: 0 0 0 3px rgba(255, 153, 64, 0.3);
+        }
+        
+        input[type="file"] {
+            padding: 0.5rem;
+            border: 2px dashed var(--red);
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        
+        .checkbox-group input {
+            margin-right: 10px;
+            width: auto;
+        }
+        
+        button {
+            background: var(--red);
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        button:hover {
+            background: var(--orange);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(231, 0, 8, 0.4);
+        }
+        
+        .package-option {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8rem;
+            border: 1px solid var(--red);
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+            background: rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .package-option:hover {
+            background: rgba(255, 153, 64, 0.1);
+            border-color: var(--orange);
+        }
+        
+        .package-price {
+            color: var(--orange);
+            font-weight: bold;
+        }
+        
+        .trail-expired {
+            color: var(--red);
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+        
+        .required {
+            color: var(--red);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: var(--cream);
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: var(--orange);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 650px) {
+            main {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+        
+/* Terms and Conditions Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: linear-gradient(135deg, var(--primary-black) 0%, #1a1a1a 100%);
+    margin: 5% auto;
+    padding: 0;
+    border: 2px solid var(--primary-red);
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 32px rgba(231, 0, 8, 0.3);
+    animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+    from {opacity: 0; transform: translateY(-50px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.modal-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--primary-red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(231, 0, 8, 0.1);
+}
+
+.modal-header h2 {
+    color: var(--primary-orange);
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.close {
+    color: var(--primary-cream);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: var(--primary-orange);
+}
+
+.modal-body {
+    padding: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.terms-content {
+    color: var(--primary-cream);
+    line-height: 1.6;
+}
+
+.terms-content h3 {
+    color: var(--primary-orange);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.terms-content h4 {
+    color: var(--primary-orange);
+    margin: 25px 0 10px 0;
+    font-size: 1.2rem;
+    border-left: 3px solid var(--primary-red);
+    padding-left: 10px;
+}
+
+.terms-content p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.terms-content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.terms-content li {
+    margin-bottom: 8px;
+}
+
+.acceptance-section {
+    background: rgba(255, 153, 64, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-orange);
+    margin: 25px 0;
+}
+
+.acceptance-section p {
+    font-weight: 600;
+    margin: 0;
+    color: var(--primary-orange);
+}
+
+.modal-footer {
+    padding: 20px;
+    border-top: 1px solid var(--primary-red);
+    text-align: center;
+    background: rgba(231, 0, 8, 0.1);
+}
+
+/* Scrollbar styling for modal */
+.modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background: var(--primary-red);
+    border-radius: 4px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-orange);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        margin: 2% auto;
+        max-height: 90vh;
+    }
+    
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .terms-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .terms-content p {
+        font-size: 0.9rem;
+    }
+}
+/* Enhanced checkbox styling */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    color: var(--primary-cream);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.checkbox-label input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--primary-orange);
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.checkbox-label input[type="checkbox"]:checked {
+    background-color: var(--primary-orange);
+    border-color: var(--primary-orange);
+}
+
+.checkbox-label input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    color: var(--primary-black);
+    font-weight: bold;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox-label a {
+    color: var(--primary-orange);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.checkbox-label a:hover {
+    color: var(--primary-red);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AllQueens254.com</h1>
+        <p class="tagline">Create your profile</p>
+    </header>
+    
+    <main>
+        <form action="../backend/register.php" method="POST" enctype="multipart/form-data" id="registrationForm">
+            <div class="form-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="location">Location <span class="required">*</span></label>
+                <input type="text" id="location" name="location" placeholder="Enter your location" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Age <span class="required">*</span></label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" min="18" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="description">Brief Description</label>
+                <textarea id="description" name="description" placeholder="Tell others about yourself" rows="3"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="gender">Gender <span class="required">*</span></label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="orientation">Orientation <span class="required">*</span></label>
+                <select id="orientation" name="orientation" required>
+                    <option value="">Select your orientation</option>
+                    <option value="Straight">Straight</option>
+                    <option value="Gay">Gay</option>
+                    <option value="Lesbian">Lesbian</option>
+                    <option value="Bisexual">Bisexual</option>
+                    <option value="Pansexual">Pansexual</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password <span class="required">*</span></label>
+                <input type="password" id="password" name="password" placeholder="Create a secure password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="package">Membership Package <span class="required">*</span></label>
+                <select id="package" name="package" required>
+                    <option value="Free Trail" data-price="FREE">Free Trial (1 month)</option>
+                    <option value="Regular" data-price="1000 KSH/month">Regular (1000 KSH/month)</option>
+                    <option value="Premium" data-price="1500 KSH/month">Premium (1500 KSH/month)</option>
+                    <option value="Gold" data-price="2000 KSH/month">Gold (2000 KSH/month)</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="mpesa">M-Pesa Number <span class="required">*</span></label>
+                <input type="text" id="mpesa" name="mpesa" placeholder="Enter your M-Pesa number" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="profile_pic">Profile Picture</label>
+                <input type="file" id="profile_pic" name="profile_pic" accept="image/*">
+            </div>
+            
+            
+<div class="form-group">
+    <label class="checkbox-label">
+        <input type="checkbox" name="terms" required>
+        I agree to the <a href="#terms" style="color: var(--primary-orange); text-decoration: underline;">Terms and Conditions</a>
+    </label>
+</div>
+            
+            <button type="submit">Create Account</button>
+            
+            <div class="links">
+                <button><a href="homepage.html">← Homepage</a></button>
+
+            </div>
+        </form>
+    </main>
+    
+<!-- Terms and Conditions Modal -->
+<div id="termsModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Terms and Conditions</h2>
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="terms-content">
+                <h3>Last Updated: September 2025</h3>
+                
+                <h4>1. Acceptance of Terms</h4>
+                <p>By accessing or using AllQueens254.com ("the Platform"), you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our services.</p>
+                
+                <h4>2. Account Registration</h4>
+                <p>2.1. You must be at least 18 years old to create an account.<br>
+                2.2. You agree to provide accurate, current, and complete information during registration.<br>
+                2.3. You are responsible for maintaining the confidentiality of your account credentials.</p>
+                
+                <h4>3. Creator Responsibilities</h4>
+                <p>
+                3.1. All content must be original or you must have rights to use it.<br>
+                3.2. You agree not to engage in fraudulent, misleading, or illegal activities.</p>
+                
+                <h4>4. Payment Terms</h4>
+                <p>4.1. All payments are processed through secure M-Pesa integration.<br>
+                4.2. Subscription fees are non-refundable.<br>
+                4.3. We reserve the right to modify pricing with 30 days notice.</p>
+                
+                <h4>5. Content Guidelines</h4>
+                <p>5.1. You agree not to post content that is Illegal or promotes illegal activities<br>
+                5.2. We reserve the right to remove content that violates these guidelines.</p>
+                
+                <h4>6. Privacy Policy</h4>
+                <p>6.1. We collect personal information necessary to provide our services.<br>
+                6.2. Your data is protected and will not be sold to third parties.<br>
+                6.3. We may use your information to improve our services and communicate with you.</p>
+                
+                <h4>7. Intellectual Property</h4>
+                <p>7.1. Creators retain ownership of their original content.<br>
+                7.2. By posting content, you grant us license to display it on our platform.<br>
+                </p>
+                
+                <h4>8. Termination</h4>
+                <p>8.1. We may suspend or terminate accounts that violate these terms.<br>
+                8.2. You may delete your account at any time through your dashboard.<br>
+                8.3. Upon termination, your content may be removed from the platform.</p>
+                
+                <h4>9. Limitation of Liability</h4>
+                <p>9.1. We are not liable for interactions between users outside our platform.<br>
+                9.2. We do not guarantee specific results or earnings for creators.<br>
+                9.3. Our total liability is limited to the amount paid for services.</p>
+                
+                <h4>10. Changes to Terms</h4>
+                <p>10.1. We may update these terms from time to time.<br>
+                10.2. Continued use of the platform constitutes acceptance of modified terms.<br>
+                10.3. Significant changes will be communicated.</p>
+                
+                <h4>11. Governing Law</h4>
+                <p>These Terms and Conditions are governed by the laws of Kenya.</p>
+                
+                <h4>12. Contact Information</h4>
+                <p>For questions about these terms, contact:<br>
+                Email: legal@allqueens254.com<br>
+                Phone: +254 700 000 000</p>
+                
+                <div class="acceptance-section">
+                    <p>By checking the agreement box, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" id="acceptTerms">I Understand</button>
+        </div>
+    </div>
+</div>
+    <footer>
+        <p>© 2023 AllQueens254.com </p>
+    </footer>
+
+<script>
+// Terms and Conditions Modal functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Get modal elements
+    const modal = document.getElementById('termsModal');
+    const termsLink = document.querySelector('a[href="#terms"]');
+    const closeBtn = document.querySelector('.close');
+    const acceptBtn = document.getElementById('acceptTerms');
+    const termsCheckbox = document.querySelector('input[name="terms"]');
+    
+    // Open modal when Terms link is clicked
+    if (termsLink) {
+        termsLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        });
+    }
+    
+    // Close modal when X is clicked
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+    }
+    
+    // Close modal when Accept button is clicked
+    if (acceptBtn) {
+        acceptBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            if (termsCheckbox) {
+                termsCheckbox.checked = true;
+            }
+        });
+    }
+    
+    // Close modal when clicking outside content
+    window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
+</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const phoneInput = document.getElementById('phone');
+            const packageSelect = document.getElementById('package');
+            const trailExpiredMsg = document.getElementById('trailExpiredMsg');
+            
+            // Check if trail is expired for this phone number
+            phoneInput.addEventListener('blur', function() {
+                if (phoneInput.value) {
+                    // Simulate checking if trail is expired (in a real scenario, this would call your backend)
+                    setTimeout(() => {
+                        // For demonstration purposes, let's assume numbers starting with '07' have expired trials
+                        if (phoneInput.value.startsWith('07')) {
+                            trailExpiredMsg.style.display = 'block';
+                            // If free trail was selected, switch to regular
+                            if (packageSelect.value === 'Free Trail') {
+                                packageSelect.value = 'Regular';
+                            }
+                        } else {
+                            trailExpiredMsg.style.display = 'none';
+                            packageSelect.querySelector('option[value="Free Trail"]').disabled = false;
+                        }
+                    }, 800);
+                }
+            });
+            
+            // Form validation
+            const form = document.getElementById('registrationForm');
+            form.addEventListener('submit', function(event) {
+                let valid = true;
+                
+                // Check age requirement
+                const ageInput = document.getElementById('age');
+                if (ageInput.value < 18) {
+                    alert('You must be at least 18 years old to register');
+                    valid = false;
+                }
+                
+                // Check terms acceptance
+                const termsCheckbox = document.getElementById('terms');
+                if (!termsCheckbox.checked) {
+                    alert('You must accept the terms and conditions');
+                    valid = false;
+                }
+                
+                if (!valid) {
+                    event.preventDefault();
+                }
+            });
+            
+            // Package selection info
+            packageSelect.addEventListener('change', function() {
+                const selectedOption = this.options[this.selectedIndex];
+                console.log('Selected package: ' + selectedOption.value + ', Price: ' + selectedOption.getAttribute('data-price'));
+            });
+        });
+    </script>
+</body>
+</html>
