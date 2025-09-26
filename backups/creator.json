@@ -1,0 +1,22 @@
+{
+    "id": 28,
+    "name": "grace njeri njoroge",
+    "location": "BHJ",
+    "age": 55,
+    "description": "",
+    "gender": "Female",
+    "orientation": "Pansexual",
+    "phone": "0799889988",
+    "password": "$2y$10$3Mdkr.wbBis5BxBs1QEfu.mJS9GhEbcHP.LfImHd5yNuzP5Ap5ZFK",
+    "package": "Free Trail",
+    "mpesa": "0799889988",
+    "nearby_places": null,
+    "profile_pic": "..\/uploads\/profilesSnapchat-1813677123.jpg",
+    "banned": 0,
+    "paid": 0,
+    "checkout_id": null,
+    "subscription_start": null,
+    "created_at": "2025-09-18 16:51:49",
+    "trail_start": "2025-09-18",
+    "trail_end": "2025-10-18"
+}
