@@ -1,0 +1,249 @@
+Form submitted
+Upload attempt: ../uploads/IMG-20240716-WA0001.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '+245113415255', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('edwin kamau njoroge', 'gatanga', 22, 'hey', 'Male', 'Straight', '+245113415255', '$2y$10$6EA0OWCXEO7UaxqHaqQwRu1ylQ2Dfz3am3CEw8CA6oELstOzpZJ3i', 'Regular', '+254113415255', '../uploads/IMG-20240716-WA0001.jpg', 0, CURDATE())
+Insert successful, creator_id: 14
+New user trail end: 2025-10-10, Current date: 2025-09-10
+Form submitted
+Upload attempt: ../uploads/IMG-20240713-WA0014.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '254113415255', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('edwin kamau njoroge', 'gatanga', 22, 'gh', 'Male', 'Straight', '254113415255', '$2y$10$p5BCeIM.IRsYmaDxmDM/9.vd8frUjDmW62fniWNhK01sb.6hOajiK', 'Gold', '254113415255', '../uploads/IMG-20240713-WA0014.jpg', 0, CURDATE())
+Insert successful, creator_id: 15
+New user trail end: 2025-10-10, Current date: 2025-09-10
+Form submitted
+Upload attempt: ../uploads/IMG-20240712-WA0002.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '254708374149', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('kim k', 'tr', 44, 'rr', 'Male', 'Straight', '254708374149', '$2y$10$K60dMh2lyMe4Q.gLJu0bgO9EMp43PavMGXSyR0DbsA5hB31jBjmHG', 'Regular', '254708374149', '../uploads/IMG-20240712-WA0002.jpg', 0, CURDATE())
+Insert successful, creator_id: 16
+New user trail end: 2025-10-10, Current date: 2025-09-10
+Form submitted
+Upload attempt: ../uploads/
+Upload failed: Error 4
+Form submitted
+Upload attempt: ../uploads/
+Upload failed: Error 4
+Form submitted
+Upload attempt: ../uploads/
+Upload failed: Error 4
+Form submitted
+Upload attempt: ../uploads/IMG-20240713-WA0033.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0723136555', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('hannah mckay', 'k road', 21, '', 'Male', 'Straight', '0723136555', '$2y$10$NxUDLGkxoegC5g9EG.8rFeroJV8ZPDP06YzXbWNB8ct6gwg6Brm52', 'Free Trail', '0723136555', '../uploads/IMG-20240713-WA0033.jpg', 0, CURDATE())
+Insert successful, creator_id: 17
+New user trail end: 2025-10-10, Current date: 2025-09-10
+Form submitted
+Upload attempt: ../uploads/profile_13_1757072544.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0123456789', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('jamie lannister', 'the north', 32, 'kingslayer', 'Male', 'Straight', '0123456789', '$2y$10$eO7GUStNb97FOi76qgupO.C16uY4pupuwO8zRkisIvxLwNmH34.TS', 'Free Trail', '0123456789', '../uploads/profile_13_1757072544.jpg', 0, CURDATE())
+Insert successful, creator_id: 18
+New user trail end: 2025-10-11, Current date: 2025-09-11
+Form submitted
+Upload attempt: ../uploads/0E5A0175.JPG
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '01234567890', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('rrr', 'rrr', 21, 'fghjkl;kjhjk', 'Male', 'Straight', '01234567890', '$2y$10$34KROiiJ76IdK40Kexu8Hus5PbtyRBoGv1lhenpwQSyg9rjsY5Foy', 'Free Trail', '01234567890', '../uploads/0E5A0175.JPG', 0, CURDATE())
+Insert successful, creator_id: 19
+New user trail end: 2025-10-12, Current date: 2025-09-12
+Form submitted
+Upload attempt: ../uploads/IMG-20240716-WA0001.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0708494978', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('masa tour', 'KAMAKIS', 20, 'the goat, youngboy neverbroke again', 'Male', 'Straight', '0708494978', '$2y$10$MQ2I4fnMNTPt2yGA/.0aduqvYOH.4PZLiCaTNWfe7qlZ8QSE4FdxO', 'Free Trail', '0708494978', '../uploads/IMG-20240716-WA0001.jpg', 0, CURDATE())
+Insert successful, creator_id: 20
+New user trail end: 2025-10-15, Current date: 2025-09-15
+Form submitted
+Upload attempt: ../uploads/IMG-20220212-WA0001.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0799999999', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('zete chuni', 'posta', 20, 'university of your choice', 'Other', 'Straight', '0799999999', '$2y$10$Hz6owUiWGQi1l4xsUCs7P./yrYoWwmGgGS1/KXhNm4fOYtgq2.7Ba', 'Free Trail', '0799999999', '../uploads/IMG-20220212-WA0001.jpg', 0, CURDATE())
+Insert successful, creator_id: 21
+New user trail end: 2025-10-16, Current date: 2025-09-16
+Form submitted
+Upload attempt: ../uploads/profiles000000.PNG
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0711111111', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('full name', 'location', 23, 'dfvhvvjhxmjndnnddvm,dbvdmvbdjv djksnvmdnvjdjvnjdm,v dj,cvnjkfvm ,cbvmdvnjdmv, djkvndm,bvdmvbjkdsvhjdvmdbvjkdvnbdvjkbdvndnbvdnmxbcnmx,hfdjkgbkdgsdkkvnsdlgldfgbdfsjbfyiukjlfdyjkdfbcidjknfdfydyfgjkfddfjkfdnjdhndigfdfidfujkdfgyjkdfsbydjsbhdjjdksguireu8rjkdhfvnbfvnvdfvbvnvvbvnvvnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnndfvhvvjhxmjndnnddvm,dbvdmvbdjv djksnvmdnvjdjvnjdm,v dj,cvnjkfvm ,cbvmdvnjdmv, djkvndm,bvdmvbjkdsvhjdvmdbvjkdvnbdvjkbdvndnbvdnmxbcnmx,hfdjkgbkdgsdkkvnsdlgldfgbdfsjbfyiukjlfdyjkdfbcidjknfdfydyfgjkfddfjkfdnjdhndigfdfidfujkdfgyjkdfsbydjsbhdjjdksguireu8rjkdhfvnbfvnvdfvbvnvvbvnvvnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnndfvhvvjhxmjndnnddvm,dbvdmvbdjv djksnvmdnvjdjvnjdm,v dj,cvnjkfvm ,cbvmdvnjdmv, djkvndm,bvdmvbjkdsvhjdvmdbvjkdvnbdvjkbdvndnbvdnmxbcnmx,hfdjkgbkdgsdkkvnsdlgldfgbdfsjbfyiukjlfdyjkdfbcidjknfdfydyfgjkfddfjkfdnjdhndigfdfidfujkdfgyjkdfsbydjsbhdjjdksguireu8rjkdhfvnbfvnvdfvbvnvvbvnvvnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnndfvhvvjhxmjndnnddvm,dbvdmvbdjv djksnvmdnvjdjvnjdm,v dj,cvnjkfvm ,cbvmdvnjdmv, djkvndm,bvdmvbjkdsvhjdvmdbvjkdvnbdvjkbdvndnbvdnmxbcnmx,hfdjkgbkdgsdkkvnsdlgldfgbdfsjbfyiukjlfdyjkdfbcidjknfdfydyfgjkfddfjkfdnjdhndigfdfidfujkdfgyjkdfsbydjsbhdjjdksguireu8rjkdhfvnbfvnvdfvbvnvvbvnvvnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnndfvhvvjhxmjndnnddvm,dbvdmvbdjv djksnvmdnvjdjvnjdm,v dj,cvnjkfvm ,cbvmdvnjdmv, djkvndm,bvdmvbjkdsvhjdvmdbvjkdvnbdvjkbdvndnbvdnmxbcnmx,hfdjkgbkdgsdkkvnsdlgldfgbdfsjbfyiukjlfdyjkdfbcidjknfdfydyfgjkfddfjkfdnjdhndigfdfidfujdfvhvvjhxmjndnnddvm,dbvdmvbdjv djksnvmdnvjdjvnjdm,v dj,cvnjkfvm ,cbvmdvnjdmv, djkvndm,bvdmvbjkdsvhjdvmdbvjkdvnbdvjkbdvndnbvdnmxbcnmx,hfdjkgbkdgsdkkvnsdlgldfgbdfsjbfyiukjlfdyjkdfbcidjknfdfydyfgjkfddfjkfdnjdhndigfdfidfujkdfgyjkdfsbydjsbhdjjdksguireu8rjkdhfvnbfvnvdfvbvnvvbvnvvnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnkdfgyjkdfsbydjsbhdjjdksguireu8rjkdhfvnbfvnvdfvbvnvvbvnvvnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn', 'Male', 'Pansexual', '0711111111', '$2y$10$lVRlERVmdajMqSGO4kPhYegEAmQxJ.3KjfBcSqyOKP1b/tEK1l0fm', 'Free Trail', '0711111111', '../uploads/profiles000000.PNG', 0, CURDATE())
+Insert successful, creator_id: 22
+New user trail end: 2025-10-16, Current date: 2025-09-16
+Form submitted
+Upload attempt: ../uploads/profiles
+Upload failed: No file
+Form submitted
+Upload attempt: ../uploads/profiles
+Upload failed: No file
+Form submitted
+Upload attempt: ../uploads/profiles1superbase.PNG
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0722222222', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('nba youngboy', 'MASA', 23, 'AI YOUNGBOY', 'Male', 'Straight', '0722222222', '$2y$10$chaWIMTH9aQeZ1tMyJ7HCugtKMYnPaeMdVQb.7eBwcDvKsZQqp7Jm', 'Free Trail', '0722222222', '../uploads/profiles1superbase.PNG', 0, CURDATE())
+Insert successful, creator_id: 23
+New user trail end: 2025-10-16, Current date: 2025-09-16
+Form submitted
+Upload attempt: ../uploads/14kt.PNG
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0733333333', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('YOO YOOO', 'YOOO', 55, 'YOOO', 'Male', 'Bisexual', '0733333333', '$2y$10$kJGjjyFa0BGJsFj.jbMKi.5pRhq7CLRsIrfEOfs4f1nxlkY9Rcpzm', 'Free Trail', '0733333333', '../uploads/14kt.PNG', 0, CURDATE())
+Insert successful, creator_id: 24
+New user trail end: 2025-10-16, Current date: 2025-09-16
+Form submitted
+Upload attempt: ../backend/uploads/profileswhat i want.PNG
+Upload failed: No file
+Form submitted
+Upload attempt: ../backend/uploads/profileswhat i want.PNG
+Upload failed: No file
+Form submitted
+Upload attempt: ../uploads/profileswhat i want.PNG
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0744444444', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('all queens', 'online', 20, 'bbbbbbb', 'Other', 'Pansexual', '0744444444', '$2y$10$zUMpB9.nEIaEpzCpVY2LZe17pv2kHqp3VzKpAkLGYON5xASRZ5gqO', 'Free Trail', '0744444444', '../uploads/profileswhat i want.PNG', 0, CURDATE())
+Insert successful, creator_id: 25
+New user trail end: 2025-10-16, Current date: 2025-09-16
+Form submitted
+Upload failed: No file
+Form submitted
+Upload attempt: ../uploads/profilesRYWH.PNG
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0766666666', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('john snow', 'kisumu', 20, 'the north remembers', 'Male', 'Lesbian', '0766666666', '$2y$10$ChCoXbMqS5i1eKbQg3GcDOxbuISu0z0Jz8WY17QKDi0/pnKNLdXjy', 'Free Trail', '0766666666', '../uploads/profilesRYWH.PNG', 0, CURDATE())
+Insert successful, creator_id: 26
+New user trail end: 2025-10-18, Current date: 2025-09-18
+Form submitted
+Upload attempt: ../uploads/profilesP-IMG-20240223-WA0023.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0788888888', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('Blueface Baby', 'kiamaiko', 32, 'thotiana', 'Male', 'Straight', '0788888888', '$2y$10$CPIEOS17zZjD4ZNussxDi.9waAIAhmD1zHwkfvnUHwIyOKxjmHwZ.', 'Free Trail', '0788888888', '../uploads/profilesP-IMG-20240223-WA0023.jpg', 0, CURDATE())
+Insert successful, creator_id: 27
+New user trail end: 2025-10-18, Current date: 2025-09-18
+Form submitted
+Upload attempt: ../uploads/profilesSnapchat-1813677123.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0799889988', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('grace njeri njoroge', 'BHJ', 55, '', 'Female', 'Pansexual', '0799889988', '$2y$10$3Mdkr.wbBis5BxBs1QEfu.mJS9GhEbcHP.LfImHd5yNuzP5Ap5ZFK', 'Free Trail', '0799889988', '../uploads/profilesSnapchat-1813677123.jpg', 0, CURDATE())
+Insert successful, creator_id: 28
+New user trail end: 2025-10-18, Current date: 2025-09-18
+Form submitted
+Upload attempt: ../uploads/profilesSnapchat-1094348409.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0799988899', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('enter full', 'location', 100, 'tell others about yourself', 'Other', 'Straight', '0799988899', '$2y$10$kSYP9.0zoxR2ik6tE92.SOrMHsEjWagoPF/6.wQ475seGIZlgRFvq', 'Free Trail', '0799988899', '../uploads/profilesSnapchat-1094348409.jpg', 0, CURDATE())
+Insert successful, creator_id: 29
+New user trail end: 2025-10-19, Current date: 2025-09-19
+Form submitted
+Upload attempt: ../uploads/profilesSnapchat-1813677123.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0788899988', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('EEE HHH', 'JJJ', 44, 'GHHGHJG', 'Male', 'Straight', '0788899988', '$2y$10$dgY4nlEeBGyGtdonhqgBw.Ty.bvOEYLok.3.W2.IAGfqE0wTLkZTS', 'Free Trail', '0788899988', '../uploads/profilesSnapchat-1813677123.jpg', 0, CURDATE())
+Insert successful, creator_id: 30
+New user trail end: 2025-10-19, Current date: 2025-09-19
+Form submitted
+Upload attempt: ../uploads/profilesSnapchat-1813677123.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0111111111', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('URFUFUF', 'FRRWFWWF', 22, 'NMRN,DK.MK/S,ED', 'Male', 'Straight', '0111111111', '$2y$10$9jmyzuWuP7mPNC.Hb2yxseySJL3QyFQRKlSq6f6/lFsdg19VJ6QLq', 'Free Trail', '0111111111', '../uploads/profilesSnapchat-1813677123.jpg', 0, CURDATE())
+Insert successful, creator_id: 31
+New user trail end: 2025-10-19, Current date: 2025-09-19
+Form submitted
+Upload attempt: ../uploads/profilesP-IMG-20240223-WA0019.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0112222222', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('GHJKLCGHJKL', 'GKJLHGFKL;', 66, 'CFGJKL;GHF', 'Male', 'Straight', '0112222222', '$2y$10$N916y4f3Z25sqPNu3O.Ro.TE/VvY9BClYrNyq2auBwL0YDG44LFOi', 'Free Trail', '0122222222', '../uploads/profilesP-IMG-20240223-WA0019.jpg', 0, CURDATE())
+Insert successful, creator_id: 32
+New user trail end: 2025-10-19, Current date: 2025-09-19
+Form submitted
+Upload attempt: ../uploads/profilesP-IMG-20240223-WA0019.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0133333333', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('TYUI', 'RTYUI', 99, 'ERTYUIO', 'Male', 'Lesbian', '0133333333', '$2y$10$ZbE5/eMCrsiUQABZKGiktOzk8R/gTu12JziSbo50blJ2kVCzoTWIe', 'Free Trail', '0133333333', '../uploads/profilesP-IMG-20240223-WA0019.jpg', 0, CURDATE())
+Insert successful, creator_id: 33
+New user trail end: 2025-10-19, Current date: 2025-09-19
+Form submitted
+Upload attempt: ../uploads/profilesP-IMG-20240223-WA0023.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0113333333', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('trfyjhk', 'fghj', 200, 'fghjk', 'Male', 'Gay', '0113333333', '$2y$10$AQmkK/yfGVxu8trLai0yqe5VjYYCUAURQBNfbLNDVc/LAwSq3FXsy', 'Free Trail', '0113333333', '../uploads/profilesP-IMG-20240223-WA0023.jpg', 0, CURDATE())
+Insert successful, creator_id: 34
+New user trail end: 2025-10-19, Current date: 2025-09-19
+Form submitted
+Upload attempt: ../uploads/profilesSnapchat-1813677123.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0122222222', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('fgthjkhfgcdghjkl', 'fgyuhiouytgyh', 300, 'dfghjklujtfghjkl;', 'Female', 'Gay', '0122222222', '$2y$10$ZyWwGMTl8AKRMaP11pHfvOXs4JlD4J2gsvAdxuaLeNJQyu1/YdIUS', 'Free Trail', '0122222222', '../uploads/profilesSnapchat-1813677123.jpg', 0, CURDATE())
+Insert successful, creator_id: 35
+New user trail end: 2025-10-19, Current date: 2025-09-19
+Form submitted
+Upload attempt: ../uploads/profilesSnapchat-1813677123.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '1234567890', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('FGHJKL', 'FGHJKL', 67, 'DFGHJKL;', 'Female', 'Straight', '1234567890', '$2y$10$RMAvQVPHV0eyhKIoTxy0n.p/rfXHskGBK7QKaKQyy8.BAXQvt9N0u', 'Free Trail', '1234567890', '../uploads/profilesSnapchat-1813677123.jpg', 0, CURDATE())
+Insert successful, creator_id: 36
+New user trail end: 2025-10-19, Current date: 2025-09-19
+Form submitted
+Upload attempt: ../uploads/profilesP-IMG-20240223-WA0019.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0000000000', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('dfghjkl', 'fghjkl', 66, 'fghjkl;', 'Male', 'Straight', '0000000000', '$2y$10$9ddDr8VygOr.J3xRv456z.X6.12kQ3GCAmg2u9UmoxHQBauZpZsei', 'Free Trail', '0000000000', '../uploads/profilesP-IMG-20240223-WA0019.jpg', 0, CURDATE())
+Insert successful, creator_id: 37
+New user trail end: 2025-10-19, Current date: 2025-09-19
+Form submitted
+Upload attempt: ../uploads/profilesP-IMG-20240223-WA0023.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0123456789', Result: Success
+Trail start: 2025-09-11, Trail end: 2025-10-11, Expired: 
+Form submitted
+Upload attempt: ../uploads/profilesP-IMG-20240223-WA0023.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0123456789', Result: Success
+Trail start: 2025-09-11, Trail end: 2025-10-11, Expired: 
+Form submitted
+Upload attempt: ../uploads/profilesP-IMG-20240223-WA0023.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0709090909', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('RERE REEE', 'THIKA', 32, '56545', 'Male', 'Straight', '0709090909', '$2y$10$4r4AY3yYvRk9q5oIZnv76O3w7QM3JG3qLi.GDAoNao9/QeafjjXiS', 'Free Trail', '0709090909', '../uploads/profilesP-IMG-20240223-WA0023.jpg', 0, CURDATE())
+Insert successful, creator_id: 38
+New user trail end: 2025-10-19, Current date: 2025-09-19
+Form submitted
+Upload attempt: ../uploads/profilesP-IMG-20240223-WA0023.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0790909090', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('YUJKNFJHCV FDJSDKLVCJKID', 'JKDJKDLVMKSDLV', 44, 'JKVNKDVNSM,DNHGIKLGJIO IHG IHKGH IOIRF', 'Male', 'Gay', '0790909090', '$2y$10$XGK89rxcbNEAVb4tuA/u5eek50ZIywdhH/afOP69oOnucfWJhjDTu', 'Free Trail', '0790909090', '../uploads/profilesP-IMG-20240223-WA0023.jpg', 0, CURDATE())
+Insert successful, creator_id: 39
+New user trail end: 2025-10-19, Current date: 2025-09-19
+Form submitted
+Upload attempt: ../uploads/profilesP-IMG-20240223-WA0023.jpg
+Upload successful
+Trail check SQL: SELECT trail_start FROM creators WHERE phone = '0790909090', Result: Success
+Insert SQL: INSERT INTO creators (name, location, age, description, gender, orientation, phone, password, package, mpesa, profile_pic, paid, trail_start) 
+                VALUES ('JHERVKKUJDF', 'GHJDVSCX', 44, 'JHBLFV', 'Female', 'Bisexual', '0790909090', '$2y$10$T8rTCLEPMwnyfDI0iU6g3eFNQlpkNtdUVS7YQCjw.kLYGo2Yy0YIq', 'Free Trail', '0790909090', '../uploads/profilesP-IMG-20240223-WA0023.jpg', 0, CURDATE())
+Insert successful, creator_id: 40
+New user trail end: 2025-10-19, Current date: 2025-09-19
